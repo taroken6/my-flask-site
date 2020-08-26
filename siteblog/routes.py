@@ -1,11 +1,11 @@
-from flask import render_template, url_for
+from flask import render_template, url_for, redirect
 from siteblog import app
 
 
 @app.route('/')
 @app.route('/home')
 def home():
-    return '<h1>Hello world!<h1>'
+    return render_template('home.html')
 
 
 @app.route('/projects')
@@ -33,6 +33,6 @@ def logout():
     return ''
 
 
-@app.route('account')
+@app.route('/account')
 def account():
     return ''
