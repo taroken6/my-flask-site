@@ -28,9 +28,20 @@
                     </div>
                 </div>
                 <!-- Navbar right -->
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="{{ url_for('login') }}">Login</a>
+                    <a class="nav-item nav-link" href="{{ url_for('register') }}">Register</a>
+                </div>
             </div>
         </nav>
     </header>
+    <main role="main" class="container">
+        <div class="row">
+            <div class="col-md-8">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+    </main>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
