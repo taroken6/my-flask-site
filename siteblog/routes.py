@@ -5,7 +5,7 @@ from siteblog import app
 @app.route('/')
 @app.route('/home')
 def home():
-    return render_template('home.html', title="Audie's Site")
+    return render_template('home.html')
 
 
 @app.route('/projects')

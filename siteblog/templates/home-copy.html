@@ -1,17 +1,24 @@
-{% extends "layout.html" %}
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="referrer" content="origin">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>My Portfolio</title>
+</head>
+<body>
     <header>
         <nav>
             <div class="nav-row">
                 <ul class="nav-main" id="nav-main">
-                    <li><a href="#section-about">About Me</a></li>
-                    <li><a href="#section-work">My Work</a></li>
-                    <li><a href="#section-contact">Contact Me</a></li>
+                    <li><a href="#section-about">About Me</a></li>                
+                    <li><a href="#section-work">My Work</a></li>                
+                    <li><a href="#section-contact">Contact Me</a></li>                
                 </ul>
             </div>
         </nav>
         <div class="profile">
-            <img src="{{ url_for('static', filename='img/profile-pic.png') }}" alt="picture" class="profile-pic">
+            <img src="resources/img/profile-pic.png" alt="picture" class="profile-pic">
             <div class="profile-text-container">
                 <p>Audie Mendaros</p>
                 <p>Software Developer</p>
@@ -28,9 +35,9 @@
 
     <section class="section-about" id="section-about">
         <h1>About Me</h1>
-        <p> My name is Audie Mendaros and I am seeking to start a career in software development. I love creating user-friendly software that brings people together.
-            After graduating from <a href="https://www.sdsu.edu/">San Diego State University</a>, I have been working on projects to simplify basic tasks and connect with old friends.
-            I have experience with Java, Python, Android SDK, XML, HTTP, and CSS as portrayed in my projects shown below and in my <a href="https://github.com/taroken6">GitHub</a>.
+        <p> My name is Audie Mendaros and I am seeking to start a career in software development. I love creating user-friendly software that brings people together. 
+            After graduating from <a href="https://www.sdsu.edu/">San Diego State University</a>, I have been working on projects to simplify basic tasks and connect with old friends. 
+            I have experience with Java, Python, Android SDK, XML, HTTP, and CSS as portrayed in my projects shown below and in my <a href="https://github.com/taroken6">GitHub</a>. 
             </p>
     </section>
 
@@ -45,8 +52,8 @@
                     <iframe src="https://www.youtube.com/embed/6kYC5o82Tfw"></iframe>
                 </div>
                 <div class="project-summary">
-                    An online card game based off the real 'Big Two' card game. Players will play against each other by playing poker hands and the largest rank is 2.
-                    This project was coded with Python, utilizes the <a href="https://www.pygame.org/" target="_blank">PyGame</a> library for a friendly graphical user interface,
+                    An online card game based off the real 'Big Two' card game. Players will play against each other by playing poker hands and the largest rank is 2. 
+                    This project was coded with Python, utilizes the <a href="https://www.pygame.org/" target="_blank">PyGame</a> library for a friendly graphical user interface, 
                     and socket programming to allow clients to communicate with each other through a server.
                 </div>
                 <div class="project-links">
@@ -64,8 +71,8 @@
                     <iframe src="https://www.youtube.com/embed/34hjhiP_aN0"></iframe>
                 </div>
                 <div class="project-summary">
-                    A budget calculator for the Android. This app allows users to calculate their earnings, budget, and spendings based on the data they input. Addtionally,
-                    the app makes use of serialzation so that users can access the data they have previously inputted. This project was coded with Java along with XML in the
+                    A budget calculator for the Android. This app allows users to calculate their earnings, budget, and spendings based on the data they input. Addtionally, 
+                    the app makes use of serialzation so that users can access the data they have previously inputted. This project was coded with Java along with XML in the 
                     <a href="https://developer.android.com/studio" target="_blank">Android Studio</a> IDE.
                 </div>
                 <div class="project-links">
@@ -122,4 +129,5 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
     crossorigin="anonymous"></script> <!-- We are using JQuery's smooth scrolling to support smooth scrolling on browsers that don't support it such as Safari and IE-->
     <script src="home-script.js"></script>
-{% endblock content %}
+</body>
+</html>

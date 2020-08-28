@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+    font-family:  sans-serif, Arial, Helvetica;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/static/img/laptop.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+/********** HEADER **********/
+
+h1 {
+    font-family: 'Josefin Sans';
+    font-size: 60px;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+h1:after {
+    display: block;
+    content: " ";
+    height: 2px;
+    border-bottom: 1px solid black;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/********** ICONS **********/
+
+ion-icon[name="logo-linkedin"] {
+    transition: color 0.2s;
+}
+ion-icon[name="logo-github"] {
+    transition: color 0.2s;
+}
+ion-icon[name="logo-youtube"] {
+    transition: color 0.2s;
+}
+
+ion-icon[name="logo-linkedin"]:hover {
+    color: #007bb5;
+}
+ion-icon[name="logo-github"]:hover {
+    color: rgb(141, 141, 141);
+}
+ion-icon[name="logo-youtube"]:hover {
+    color: #ff0000;
+}
+
+/********** LINKS **********/
+
+.section-about p a:visited,
+.section-about p a:link,
+.project-summary a:visited,
+.project-summary a:link {
+    text-decoration: none;
+    color: #0645AD;
+}
+
+/* --------------------------------------------------*/
+/* NAVIGATION */
+/* --------------------------------------------------*/
+
+.nav-row {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nav-main {
+    float: right;
+    list-style: none; /*** Removes bullets ***/
+    margin-top: 30px;
+}
+
+.nav-main li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.nav-main li a {
+    color: white;
+    border-bottom: 2px solid white;
+    padding: 8px;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.nav-main li a:link,
+.nav-main li a:visited {
+    text-decoration: none;
+}
+
+.nav-main li a:hover {
+    color: rgb(199, 199, 199);
+    border-color: rgb(199, 199, 199);
+}
+
+/* --------------------------------------------------*/
+/* HOME */
+/* --------------------------------------------------*/
+.profile {
+    color: #fff;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-pic {
+    border-radius: 300px;
+    border: #fff;
+    object-fit: cover; /*** Prevents image distortion ***/
+    height: 120px;
+    width: 120px;
+}
+
+.profile-text-container {
+    margin: 0px 20px;
+}
+
+.profile-text-container p {
+    padding-bottom: 5px;
+}
+
+.profile-text-container p:first-child {
+    color: #ffffff;
+    font-size: 145%;
+}
+
+.profile-links ul {
+    margin-top: 5px;
+    list-style: none;
+}
+
+.profile-links li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.profile-links li a:visited,
+.profile-links li a:link {
+    text-decoration: none;
+    color: white;
+}
+
+/* --------------------------------------------------*/
+/* ABOUT ME */
+/* --------------------------------------------------*/
+
+.section-about {
+    padding-bottom: 30px;
+}
+
+.section-about p {
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* --------------------------------------------------*/
+/* MY WORKS */
+/* --------------------------------------------------*/
+
+.section-work {
+    background-color: #eeeeee;
+    overflow: auto;
+    padding-bottom: 30px;
+}
+
+.project-table {
+    display: table;
+    border-spacing: 100px 0;
+}
+
+.project-cell {
+    display: table-cell;
+    border: 2px solid rgb(180, 180, 180);
+    border-radius: 10px;
+}
+
+.project-cell div {
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.project-title {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 125%;
+}
+
+.project-title:after {
+    display: block;
+    content: " ";
+    height: 2px;
+    border-bottom: 1px solid black;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.project-image iframe{
+    display: block;
+    margin: 10px auto;
+    width: 90%;
+    height: 400px;
+}
+
+.project-summary,
+.project-links {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.project-links ul {
+    list-style: none;
+}
+
+.project-links ul li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.project-links ul li a:link,
+.project-links ul li a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+/* --------------------------------------------------*/
+/* CONTACT */
+/* --------------------------------------------------*/
+
+.contact-row {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact-row div {
+    display: block;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.contact-text {
+    width: 33%;
+}
+
+.contact-input {
+    width: 66%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #cfcfcf;
+}
+
+textarea {
+    height: 100px;
+}
+
+
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #fff;
+    border: 1px solid #919191;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:active {
+    color: #fff;
+    background-color: #919191;
+}
+
+input[type="submit"],
+.disclaimer {
+    float: left;
+    margin-right: 5px;
+}
+
+.disclaimer {
+    font-size: 70%;
+}
+
+*:focus {outline: none;}
