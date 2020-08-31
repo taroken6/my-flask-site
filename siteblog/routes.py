@@ -10,7 +10,7 @@ def home():
 
 @app.route('/projects')
 def projects():
-    return ''
+    return render_template('projects.html', title='Projects')
 
 
 @app.route('/blog')
