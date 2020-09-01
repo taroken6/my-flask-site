@@ -1,121 +1,123 @@
 {% extends "layout.html" %}
 {% block content %}
-    <header>
-        <nav>
-            <div class="nav-row">
-                <ul class="nav-main" id="nav-main">
-                    <li><a href="#section-about">About Me</a></li>
-                    <li><a href="#section-work">My Work</a></li>
-                    <li><a href="#section-contact">Contact Me</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div class="profile">
-            <img src="{{ url_for('static', filename='img/profile-pic.png') }}" alt="picture" class="profile-pic">
-            <div class="profile-text-container">
-                <p>Audie Mendaros</p>
-                <p>Software Developer</p>
-            </div>
-            <div class="profile-links">
-                <ul>
-                    <li><a href="https://linkedin.com/in/audie-mendaros/" target="_none"><ion-icon name="logo-linkedin"></ion-icon></a></ion-icon></li>
-                    <li><a href="https://github.com/taroken6" target="_none"><ion-icon name="logo-github"></ion-icon></a></li>
-                    <li><a href="https://www.youtube.com/playlist?list=PLLt--NmamkatcaAPu38e1mkHLcPszgCst" target="_none"><ion-icon name="logo-youtube"></ion-icon></a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
-
-    <section class="section-about" id="section-about">
-        <h1>About Me</h1>
-        <p> My name is Audie Mendaros and I am seeking to start a career in software development. I love creating user-friendly software that brings people together.
-            After graduating from <a href="https://www.sdsu.edu/">San Diego State University</a>, I have been working on projects to simplify basic tasks and connect with old friends.
-            I have experience with Java, Python, Android SDK, XML, HTTP, and CSS as portrayed in my projects shown below and in my <a href="https://github.com/taroken6">GitHub</a>.
-            </p>
-    </section>
-
-    <section class="section-work" id="section-work">
-        <h1>My Work</h1>
-        <div class="project-table">
-            <div class="project-cell">
-                <div class="project-title">
-                    Big Two - Online Card Game
+    <div class="home">
+        <header>
+            <nav>
+                <div class="nav-row">
+                    <ul class="nav-main" id="nav-main">
+                        <li><a href="#section-about">About Me</a></li>
+                        <li><a href="#section-work">My Work</a></li>
+                        <li><a href="#section-contact">Contact Me</a></li>
+                    </ul>
                 </div>
-                <div class="project-image">
-                    <iframe src="https://www.youtube.com/embed/6kYC5o82Tfw"></iframe>
+            </nav>
+            <div class="profile">
+                <img src="{{ url_for('static', filename='img/profile-pic.png') }}" alt="picture" class="profile-pic">
+                <div class="profile-text-container">
+                    <p>Audie Mendaros</p>
+                    <p>Software Developer</p>
                 </div>
-                <div class="project-summary">
-                    An online card game based off the real 'Big Two' card game. Players will play against each other by playing poker hands and the largest rank is 2.
-                    This project was coded with Python, utilizes the <a href="https://www.pygame.org/" target="_blank">PyGame</a> library for a friendly graphical user interface,
-                    and socket programming to allow clients to communicate with each other through a server.
-                </div>
-                <div class="project-links">
+                <div class="profile-links">
                     <ul>
-                        <li><a href="https://github.com/taroken6/Big-Two-Game" target="_none"><ion-icon name="logo-github"></ion-icon></a></li>
-                        <li><a href="https://youtu.be/6kYC5o82Tfw" target="_none"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                        <li><a href="https://linkedin.com/in/audie-mendaros/" target="_none"><ion-icon name="logo-linkedin"></ion-icon></a></ion-icon></li>
+                        <li><a href="https://github.com/taroken6" target="_none"><ion-icon name="logo-github"></ion-icon></a></li>
+                        <li><a href="https://www.youtube.com/playlist?list=PLLt--NmamkatcaAPu38e1mkHLcPszgCst" target="_none"><ion-icon name="logo-youtube"></ion-icon></a></li>
                     </ul>
                 </div>
             </div>
-            <div class="project-cell">
-                <div class="project-title">
-                    Budget Calculator - Android App
-                </div>
-                <div class="project-image">
-                    <iframe src="https://www.youtube.com/embed/34hjhiP_aN0"></iframe>
-                </div>
-                <div class="project-summary">
-                    A budget calculator for the Android. This app allows users to calculate their earnings, budget, and spendings based on the data they input. Addtionally,
-                    the app makes use of serialzation so that users can access the data they have previously inputted. This project was coded with Java along with XML in the
-                    <a href="https://developer.android.com/studio" target="_blank">Android Studio</a> IDE.
-                </div>
-                <div class="project-links">
-                    <ul>
-                        <li><a href="https://github.com/taroken6/Big-Two-Game" target="_none"><ion-icon name="logo-github"></ion-icon></a></li>
-                        <li><a href="https://youtu.be/34hjhiP_aN0" target="_none"><ion-icon name="logo-youtube"></ion-icon></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+        </header>
 
-    <section class="section-contact" id="section-contact">
-        <h1>Contact Me</h1>
-        <form action="http://formspree.io/audiemendaros@yahoo.com" method="POST">
-            <div class="contact-row">
-                <div class="contact-text">
-                    <label>Name</label>
+        <section class="section-about" id="section-about">
+            <h1>About Me</h1>
+            <p> My name is Audie Mendaros and I am seeking to start a career in software development. I love creating user-friendly software that brings people together.
+                After graduating from <a href="https://www.sdsu.edu/">San Diego State University</a>, I have been working on projects to simplify basic tasks and connect with old friends.
+                I have experience with Java, Python, Android SDK, XML, HTTP, and CSS as portrayed in my projects shown below and in my <a href="https://github.com/taroken6">GitHub</a>.
+                </p>
+        </section>
+
+        <section class="section-work" id="section-work">
+            <h1>My Work</h1>
+            <div class="project-table">
+                <div class="project-cell">
+                    <div class="project-title">
+                        Big Two - Online Card Game
+                    </div>
+                    <div class="project-image">
+                        <iframe src="https://www.youtube.com/embed/6kYC5o82Tfw"></iframe>
+                    </div>
+                    <div class="project-summary">
+                        An online card game based off the real 'Big Two' card game. Players will play against each other by playing poker hands and the largest rank is 2.
+                        This project was coded with Python, utilizes the <a href="https://www.pygame.org/" target="_blank">PyGame</a> library for a friendly graphical user interface,
+                        and socket programming to allow clients to communicate with each other through a server.
+                    </div>
+                    <div class="project-links">
+                        <ul>
+                            <li><a href="https://github.com/taroken6/Big-Two-Game" target="_none"><ion-icon name="logo-github"></ion-icon></a></li>
+                            <li><a href="https://youtu.be/6kYC5o82Tfw" target="_none"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="contact-input">
-                    <input type="text" name="name" id="full-name" placeholder="Your name" required>
+                <div class="project-cell">
+                    <div class="project-title">
+                        Budget Calculator - Android App
+                    </div>
+                    <div class="project-image">
+                        <iframe src="https://www.youtube.com/embed/34hjhiP_aN0"></iframe>
+                    </div>
+                    <div class="project-summary">
+                        A budget calculator for the Android. This app allows users to calculate their earnings, budget, and spendings based on the data they input. Addtionally,
+                        the app makes use of serialzation so that users can access the data they have previously inputted. This project was coded with Java along with XML in the
+                        <a href="https://developer.android.com/studio" target="_blank">Android Studio</a> IDE.
+                    </div>
+                    <div class="project-links">
+                        <ul>
+                            <li><a href="https://github.com/taroken6/Big-Two-Game" target="_none"><ion-icon name="logo-github"></ion-icon></a></li>
+                            <li><a href="https://youtu.be/34hjhiP_aN0" target="_none"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="contact-row">
-                <div class="contact-text">
-                    <label>Email</label>
+        </section>
+
+        <section class="section-contact" id="section-contact">
+            <h1>Contact Me</h1>
+            <form action="http://formspree.io/audiemendaros@yahoo.com" method="POST">
+                <div class="contact-row">
+                    <div class="contact-text">
+                        <label>Name</label>
+                    </div>
+                    <div class="contact-input">
+                        <input type="text" name="name" id="full-name" placeholder="Your name" required>
+                    </div>
                 </div>
-                <div class="contact-input">
-                    <input type="email" name="_replyto" id="email-address" placeholder="Your email" required>
+                <div class="contact-row">
+                    <div class="contact-text">
+                        <label>Email</label>
+                    </div>
+                    <div class="contact-input">
+                        <input type="email" name="_replyto" id="email-address" placeholder="Your email" required>
+                    </div>
                 </div>
-            </div>
-            <div class="contact-row">
-                <div class="contact-text">
-                    <label>Message</label>
+                <div class="contact-row">
+                    <div class="contact-text">
+                        <label>Message</label>
+                    </div>
+                    <div class="contact-input">
+                        <textarea name="message" id="message" placeholder="Your message" required></textarea>
+                    </div>
                 </div>
-                <div class="contact-input">
-                    <textarea name="message" id="message" placeholder="Your message" required></textarea>
+                <div class="contact-row">
+                    <div class="contact-text">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="contact-input">
+                        <input type="submit" value="Send!">
+                        <p class="disclaimer">*Submitting will take you to another website</p>
+                    </div>
                 </div>
-            </div>
-            <div class="contact-row">
-                <div class="contact-text">
-                    <label>&nbsp;</label>
-                </div>
-                <div class="contact-input">
-                    <input type="submit" value="Send!">
-                    <p class="disclaimer">*Submitting will take you to another website</p>
-                </div>
-            </div>
-        </form>
-    </section>
+            </form>
+        </section>
+    </div>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <script
     src="https://code.jquery.com/jquery-3.5.1.min.js"

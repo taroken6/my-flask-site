@@ -4,17 +4,17 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size: 20px;
-    font-family:  sans-serif, Arial, Helvetica;
-}
-
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/static/img/laptop.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
     background-attachment: fixed;
+}
+
+.home {
+    font-size: 20px;
+    font-family:  sans-serif, Arial, Helvetica;
 }
 
 /********** HEADER **********/
